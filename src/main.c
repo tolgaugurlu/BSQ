@@ -6,11 +6,11 @@
 /*   By: 42istanbul <42istanbul.com.tr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 17:14:11 by 42istanbu         #+#    #+#             */
-/*   Updated: 2023/02/23 17:23:12 by 42istanbu        ###   ########.tr       */
+/*   Updated: 2023/02/23 17:46:20 by 42istanbu        ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "reader.h"
+#include "../includes/reader.h"
 #include <stdio.h>
 int	main(int agc, char **agv)
 {
