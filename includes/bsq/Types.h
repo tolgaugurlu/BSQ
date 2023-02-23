@@ -11,10 +11,14 @@
 /* ************************************************************************** */
 
 #ifndef TYPES_H
+// Daha önce tanımlanıp tanımlanmadığını kontrol eder ve devam eder. Tanımlanmadıysa tanımlar. IDFED kullanılmamasının sebebi tanımlansa bile ikinci tanımlamayı devam eder ve hata verir. IFDEF normal koşullar için kullanılır.
 # define TYPES_H
+// Define yapısı constant gibi yani sabit değerleri tutmak için kullanılır.
 # define MIN(a, b) ((a) > (b) ? (b) : (a))
+// Aldığı iki değer karşılaştırılır ve küçük değer döndürülür. 
 
 typedef enum e_bool
+// 
 {
 	false = 0,
 	true = 1,
