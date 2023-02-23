@@ -6,12 +6,17 @@
 /*   By: 42istanbul <42istanbul.com.tr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 11:13:04 by 42istanbu         #+#    #+#             */
-/*   Updated: 2023/02/23 11:13:50 by 42istanbu        ###   ########.tr       */
+/*   Updated: 2023/02/23 16:09:38 by 42istanbu        ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRINGS_H
 # define STRINGS_H
+# include <unistd.h>
 
+void	ft_putchar(char c);
+int		ft_strlen(char *str);
+int		ft_strlen(char *str, char stop_point);
+void	ft_putstr(char *str);
 void	print_error(char *message);
 #endif

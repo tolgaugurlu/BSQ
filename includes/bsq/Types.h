@@ -6,7 +6,7 @@
 /*   By: 42istanbul <42istanbul.com.tr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 10:30:28 by 42istanbu         #+#    #+#             */
-/*   Updated: 2023/02/23 15:29:50 by 42istanbu        ###   ########.tr       */
+/*   Updated: 2023/02/23 16:24:32 by 42istanbu        ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ typedef struct a_info
 	char	obstacle;
 	char	avaliable_char;
 	char	writable_char;
+	int		column_size;
 }	t_info;
 
 typedef struct map_clone
