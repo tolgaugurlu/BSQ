@@ -6,11 +6,11 @@
 /*   By: 42istanbul <42istanbul.com.tr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 15:34:31 by 42istanbu         #+#    #+#             */
-/*   Updated: 2023/02/23 17:08:20 by 42istanbu        ###   ########.tr       */
+/*   Updated: 2023/02/23 17:45:55 by 42istanbu        ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "./includes/strings.h"
 
 void	ft_putchar(char c)
 {

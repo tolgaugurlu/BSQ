@@ -6,11 +6,11 @@
 /*   By: 42istanbul <42istanbul.com.tr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 15:39:32 by 42istanbu         #+#    #+#             */
-/*   Updated: 2023/02/23 17:20:03 by 42istanbu        ###   ########.tr       */
+/*   Updated: 2023/02/23 17:45:49 by 42istanbu        ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "reader.h"
+#include "../includes/reader.h"
 
 char	**split(char *str)
 {
