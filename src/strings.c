@@ -6,7 +6,7 @@
 /*   By: 42istanbul <42istanbul.com.tr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 15:34:31 by 42istanbu         #+#    #+#             */
-/*   Updated: 2023/02/23 17:45:55 by 42istanbu        ###   ########.tr       */
+/*   Updated: 2023/02/23 19:30:33 by 42istanbu        ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,24 @@ int	ft_strlen(char *str)
 	while (str[index])
 		index++;
 	return (index);
+}
+
+char	*ft_strdup(char *src)
+{
+	int		length;
+	char	*result;
+
+	length = 0;
+	while (src[length])
+		length++;
+	result = malloc(sizeof(char) * length + 1);
+	length = 0;
+	while (src[length])
+	{
+		result[length] = src[length];
+		length++;
+	}
+	return (result);
 }
 
 int	ft_strlen_with_point(char *str, char stop_point)

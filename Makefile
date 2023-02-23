@@ -9,4 +9,4 @@ SOURCES = ./src/main.c ./includes/error_handler.h ./src/reader.c ./includes/read
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(FLAGS) -o $(NAME) $(SOURCES)
+	$(CC) $(FLAGS) $(SOURCES)
