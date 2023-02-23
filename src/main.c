@@ -14,7 +14,7 @@
 #include <stdio.h>
 int	main(int agc, char **agv)
 {
-	t_info	info;
+	t_info	*info;
 	if (agc == 1)
 	{
 		//input
@@ -22,7 +22,7 @@ int	main(int agc, char **agv)
 	else if(agc == 2)
 	{
 		info = read_from_file(agv[1]);
-		printf("%s" info->matrix[0]);
+		printf("%s" ,info->matrix[0]);
 	}
 	else if (agc > 2)
 		print_error(TOO_MANY_ARG);

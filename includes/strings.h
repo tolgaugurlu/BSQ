@@ -16,7 +16,7 @@
 
 void	ft_putchar(char c);
 int		ft_strlen(char *str);
-int		ft_strlen(char *str, char stop_point);
+int		ft_strlen_with_point(char *str, char stop_point);
 void	ft_putstr(char *str);
 void	print_error(char *message);
 #endif

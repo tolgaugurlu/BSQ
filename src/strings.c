@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./includes/strings.h"
+#include "../includes/strings.h"
 
 void	ft_putchar(char c)
 {
@@ -42,7 +42,7 @@ int	ft_strlen(char *str)
 	return (index);
 }
 
-int	ft_strlen(char *str, char stop_point)
+int	ft_strlen_with_point(char *str, char stop_point)
 {
 	int	index;
 
