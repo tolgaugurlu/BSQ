@@ -6,7 +6,7 @@
 /*   By: 42istanbul <42istanbul.com.tr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 15:39:32 by 42istanbu         #+#    #+#             */
-/*   Updated: 2023/02/23 16:28:43 by 42istanbu        ###   ########.tr       */
+/*   Updated: 2023/02/23 17:07:55 by 42istanbu        ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,12 @@ char	**split(char *str)
 	index = 0;
 	matrix_second = 0;
 	matrix_index = 0;
-	matrix =(char **)malloc(sizeof(char) * ft_strlen(str));
+	matrix = (char **)malloc(sizeof(char) * (ft_strlen(str) + 1));
 	while (str[index])
 	{
-		if(str[index] == '\n')
+		if (str[index] == '\n')
 		{
+			matrix[matrix_index][index] = '\0';
 			matrix_index++;
 			matrix_second = 0;
 		}
@@ -61,12 +62,10 @@ t_info	*read_from_file(char *file_name)
 	char	buffer[MAX_INT];
 	char	**matrix;
 	int		file_index;
-	int		size;
 	int		first_line_size;
 
 	file_index = open(file_name, O_RDONLY);
-	size = read(file_index, buffer, MAX_INT);
-	if (size == -1)
+	if (read(file_index, buffer, MAX_INT) == -1)
 	{
 		ft_putstr(MAP_ERROR);
 		exit(1);
