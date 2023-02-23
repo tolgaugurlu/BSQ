@@ -1,40 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   types.h                                            :+:      :+:    :+:   */
+/*   reader.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: 42istanbul <42istanbul.com.tr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/23 10:30:28 by 42istanbu         #+#    #+#             */
-/*   Updated: 2023/02/23 15:29:50 by 42istanbu        ###   ########.tr       */
+/*   Created: 2023/02/23 15:21:38 by 42istanbu         #+#    #+#             */
+/*   Updated: 2023/02/23 15:31:26 by 42istanbu        ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
+#ifndef READER_H
+# define READER_H
 
-#ifndef TYPES_H
-# define TYPES_H
-# define MIN(a, b) ((a) > (b) ? (b) : (a))
+# include <stdlib.h>
+# include <fcntl.h>
+# include <unistd.h>
+# include "types.h"
 
-typedef enum e_bool
-{
-	false = 0,
-	true = 1,
-}	t_bool;
-
-# define TRUE 1
-# define FALSE 0
-
-typedef struct a_info
-{
-	char	**matrix;
-	char	obstacle;
-	char	avaliable_char;
-	char	writable_char;
-}	t_info;
-
-typedef struct map_clone
-{
-	int	x;
-	int	y;
-}	t_clone;
-
+t_info	*read_from_file(char *file_name);
 #endif
