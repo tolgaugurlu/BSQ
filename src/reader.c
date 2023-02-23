@@ -6,7 +6,7 @@
 /*   By: 42istanbul <42istanbul.com.tr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 15:39:32 by 42istanbu         #+#    #+#             */
-/*   Updated: 2023/02/23 17:45:49 by 42istanbu        ###   ########.tr       */
+/*   Updated: 2023/02/23 18:07:38 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,8 +70,9 @@ t_info	*read_from_file(char *file_name)
 		ft_putstr(MAP_ERROR);
 		exit(1);
 	}
-	first_line_size = ft_strlen(buffer, "\n");
+	first_line_size = ft_strlen_with_point(buffer, '\n');
 	matrix = split(&buffer[first_line_size]);
+	info = (t_info *)malloc(sizeof(t_info));
 	info->matrix = matrix;
 	info = map_info(info, buffer);
 	close(file_index);

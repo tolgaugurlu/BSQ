@@ -4,7 +4,7 @@ CC = gcc
 
 FLAGS = -Wall -Werror -Wextra
 
-SOURCES = error_handler.h reader.c reader.h strings.c strings.h Types.h
+SOURCES = ./src/main.c ./includes/error_handler.h ./src/reader.c ./includes/reader.h ./src/strings.c ./includes/strings.h ./includes/types.h
 
 all: $(NAME)
 
