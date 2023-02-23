@@ -6,7 +6,7 @@
 /*   By: 42istanbul <42istanbul.com.tr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 15:39:32 by 42istanbu         #+#    #+#             */
-/*   Updated: 2023/02/23 17:07:55 by 42istanbu        ###   ########.tr       */
+/*   Updated: 2023/02/23 17:20:03 by 42istanbu        ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,6 @@ t_info	*read_from_file(char *file_name)
 	matrix = split(&buffer[first_line_size]);
 	info->matrix = matrix;
 	info = map_info(info, buffer);
+	close(file_index);
 	return (info);
 }
